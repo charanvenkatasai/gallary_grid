@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .container{
+        display:grid;
+        height: 200px;
+        width: 500px;
+       
+
+        
+       
+
+
+
+        grid-template-areas:
+  "img1 img1 img2 img2 img3 img3"
+  "img4 img4 img2 img2 img3 img3"
+  "img5 img5 img6 img6 img7 img7"
+  "img8 img8 img6 img6 img7 img7"
+  "img8 img8 img9 img9 img9 img9" ;
+
+
+      
+    
+    }
+    .img1{
+        grid-area: img1;
+
+       
+    }
+    .img2{
+        grid-area: img2;
+       
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    .img5{
+        grid-area: img5;
+    }
+    .img6{
+        grid-area: img6;
+    }
+    .img7{
+        grid-area: img7;
+    }
+    .img8{
+        grid-area: img8;
+    }
+    .img9{
+        grid-area: img9;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+@media screen and (width<600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="img1"> <img src="grid1.jpeg" ></div>
+        <div class="img2"> <img src="grid2.jpg"> </div>
+        <div class="img3"> <img src="grid3.jpeg"></div>
+        <div class="img4"> <img src="grid4.jpeg"></div>
+        <div class="img5"> <img src="grid5.jpg"></div>
+        <div class="img6"> <img src="grid6.jpg"></div>
+        <div class="img7"> <img src="grid7.jpeg" ></div>
+        <div class="img8"> <img src="grid8.jpeg"></div>
+        <div class="img9"> <img src="grid9.jpeg"></div>
+    </div>
+</body>
+</html>
